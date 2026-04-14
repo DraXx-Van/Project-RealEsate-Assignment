@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-secondary-fixed-variant: #3a4a49;
+  --color-primary-container: #3eb489;
+  --color-on-secondary-fixed: #0e1e1e;
+  --color-on-error-container: #93000a;
+  --color-on-tertiary: #ffffff;
+  --color-surface-bright: #f8faf9;
+  --color-tertiary-fixed-dim: #9dd1bf;
+  --color-outline-variant: #bccac1;
+  --color-on-primary-fixed: #002115;
+  --color-secondary-container: #d4e6e5;
+  --color-secondary: #516161;
+  --color-tertiary-fixed: #b9eedb;
+  --color-primary-fixed-dim: #69dbad;
+  --color-on-tertiary-fixed: #002019;
+  --color-error-container: #ffdad6;
+  --color-tertiary-container: #78ab9a;
+  --color-surface-dim: #d8dada;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #e1e3e2;
+  --color-inverse-on-surface: #eff1f0;
+  --color-on-surface-variant: #3d4943;
+  --color-outline: #6d7a72;
+  --color-surface-container-highest: #e1e3e2;
+  --color-surface-container-high: #e6e9e8;
+  --color-primary-fixed: #86f8c8;
+  --color-on-tertiary-fixed-variant: #1c4f42;
+  --color-on-tertiary-container: #063f33;
+  --color-error: #ba1a1a;
+  --color-on-primary: #ffffff;
+  --color-tertiary: #366759;
+  --color-on-secondary-container: #576867;
+  --color-secondary-fixed: #d4e6e5;
+  --color-on-secondary: #ffffff;
+  --color-on-background: #191c1c;
+  --color-on-primary-fixed-variant: #005139;
+  --color-inverse-primary: #69dbad;
+  --color-secondary-fixed-dim: #b8cac9;
+  --color-background: #f8faf9;
+  --color-primary: #006c4d;
+  --color-surface: #f8faf9;
+  --color-inverse-surface: #2e3131;
+  --color-surface-tint: #006c4d;
+  --color-surface-container-low: #f2f4f3;
+  --color-on-primary-container: #00402d;
+  --color-surface-container: #eceeed;
+  --color-on-surface: #191c1c;
+  --color-on-error: #ffffff;
+
+  --font-headline: "Newsreader", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+.editorial-overlap {
+    filter: drop-shadow(0 20px 40px rgba(25, 28, 28, 0.06));
+}
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0, 108, 77, 0.4) 0%, rgba(25, 28, 28, 0.2) 100%);
+}
+.primary-gradient {
+    background: linear-gradient(135deg, #006c4d 0%, #3eb489 100%);
+}
