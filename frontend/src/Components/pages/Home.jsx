@@ -11,8 +11,8 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
-        const res = await axios.get(`${apiBase}/content`);
+            const apiBase = (import.meta.env.VITE_API_BASE_URL || "http://localhost:5000").replace(/\/$/, "");
+            const res = await axios.get(`${apiBase}/content`);
         setData(res.data);
       } catch (err) {
         console.error("Failed to fetch data", err);

@@ -11,8 +11,9 @@ mongoose.connect(process.env.MONGO_URI)
 const app = express();
 
 // dynamic cors for production
+const frontendUrl = (process.env.FRONTEND_URL || "*").replace(/\/$/, "");
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "*",
+    origin: frontendUrl,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));

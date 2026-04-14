@@ -20,7 +20,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     // Fetch initial data from Backend
-    const apiBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+    const apiBase = (import.meta.env.VITE_API_BASE_URL || "http://localhost:5000").replace(/\/$/, "");
     axios.get(`${apiBase}/content`)
       .then(res => {
         if (res.data) {
@@ -129,7 +129,7 @@ const AdminDashboard = () => {
         const keysToRemove = ['amenitiesArray', 'faqArray', 'connectivityArray', 'constructionStatus', 'constructionTimelineArray'];
         keysToRemove.forEach(k => delete payload[k]);
 
-        const apiBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+        const apiBase = (import.meta.env.VITE_API_BASE_URL || "http://localhost:5000").replace(/\/$/, "");
         await axios.post(`${apiBase}/content`, payload);
         alert('Site content updated successfully!');
     } catch (err) {
